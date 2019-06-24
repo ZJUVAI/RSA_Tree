@@ -133,18 +133,18 @@ public:
 
 
     void load(string file) {
-        string t1 = "./result/" + file + "Rtree";
+        string t1 = file + "Rtree";
         tree.LoadRTree(t1.c_str(), satSet);
 
-        string t2 = "./result/" + file + "SAT";
+        string t2 = file + "SAT";
         tree.LoadSAT(t2.c_str(), satSet);
     }
 
     void save(string file) {
-        string t1 = "./result/" + file + "Rtree";
+        string t1 = file + "Rtree";
         tree.SaveRTree(t1.c_str());
 
-        string t2 = "./result/" + file + "SAT";
+        string t2 = file + "SAT";
         tree.SaveSAT(t2.c_str());
     }
 

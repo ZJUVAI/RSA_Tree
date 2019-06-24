@@ -57,3 +57,4 @@ backend/results/**
 backend/data/**
 
 !CMakeLists.txt
+construct/result/
