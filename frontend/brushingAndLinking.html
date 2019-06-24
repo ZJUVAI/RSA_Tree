@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Brushing And Linking</title>
+	<script src='./src/resource/mapbox.js-bower-3.1.1/mapbox.js'></script>
+	<link href='./src/resource/mapbox.js-bower-3.1.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="./src/resource/font/Font-Awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body id="brushbody">
+	<div class="sys-header">
+		<div class="menu">
+			<img src="./src/resource/image/2.png" alt="menu">
+		</div>
+		<span class="sys-name">RSATree</span>
+		<span class="split-line"></span>
+		<span class="sys-title">Brushing And Linking</span>
+	</div>
+	<div id="brush-mode" class="fa fal fa-plus"></div>
+	<div id='brushmap'>
+		<!-- <svg id="brushmapSvg" class="leaflet-zoom-hide">
+		</svg> -->
+		<canvas id="brushmapCanvas" class="leaflet-zoom-hide" width="2000" height="2000" style="position:absolute;left: 0;top: 0;z-index: 10;">
+			Your browser does not support the HTML5 <code>&lt;canvas&gt;</code> element.
+		</canvas>
+	</div>
+	<div id="chart-container">
+		<div class="chart-item" id="barchart-dayofweek">
+			<span class="chart-title">DAY OF WEEK</span>
+		</div>
+		<div class="chart-item" id="barchart-hour">
+			<span class="chart-title">HOUR</span>
+		</div>
+		<div class="chart-item" id="timelinechart-time">
+			<span class="chart-title">TIME</span>
+		</div>
+	</div>
+	<script src="/dist/brushingAndLinking.bundle.js"></script>
+</body>
+
+</html>

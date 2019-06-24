@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Heatmap</title>
+	<script src='./src/resource/mapbox.js-bower-3.1.1/mapbox.js'></script>
+	<link href='./src/resource/mapbox.js-bower-3.1.1/mapbox.css' rel='stylesheet' />
+</head>
+
+<body id="body">
+	<div class="sys-header">
+		<div class="menu">
+			<img src="./src/resource/image/2.png" alt="menu">
+		</div>
+		<span class="sys-name">RSATree</span>
+		<span class="split-line"></span>
+		<span class="sys-title">Heatmap</span>
+	</div>
+
+	<div id='map'>
+		<!-- <svg id="mapSvg" class="leaflet-zoom-hide">
+		</svg> -->
+		<canvas id="mapCanvas" class="leaflet-zoom-hide" width="2000" height="2000" style="position:absolute;left: 0;top: 0;z-index: 10;">
+			Your browser does not support the HTML5 <code>&lt;canvas&gt;</code> element.
+		</canvas>
+		<!-- <div id="mapCanvas" height="100%" width="100%"></div> -->
+	</div>
+
+	<!--<div class="options">
+		<div class="space-division option-item">
+			<span class="option-name">Space Division:</span>
+			<div class="division-option option-button" id="KDTree">KDTree</div>
+			<div class="division-option option-button" id="RTree">RTree</div>
+		</div>
+		<div class="chart-type option-item">
+			<span class="option-name">Chart Type:</span>
+			<div class="type-option option-button" id="leaves">Leaves</div>
+			<div class="type-option option-button" id="heatmap">Heatmap</div>
+			<div class="type-option option-button" id="eheatmap">E-Heatmap</div>
+		</div>
+	</div>-->
+	
+	<script src="dist/heatmap.bundle.js"></script>
+</body>
+
+</html>

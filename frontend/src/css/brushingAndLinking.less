@@ -1,0 +1,75 @@
+#brushbody {
+	margin-top: 40px;
+	display: -webkit-box;
+	background-color: #f6f6f7;
+}
+
+#brushmap {
+	margin-right: 20px;
+	width: 60%;
+	height: 1000px;
+	position: relative;
+	width: 1260px;
+	height: 1030px;
+	border-right: 1px solid #979797;
+}
+
+#brushmapSvg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 50px; //权宜之计
+	z-index: 1000;
+	pointer-events: none;
+}
+
+// #chart-container {
+// }
+.chart-item {
+	width: 620px;
+	height: 316px;
+	margin: 20px 0;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px #e8e8e8;
+	position: relative;
+}
+
+#brush-mode {
+	position: absolute;
+	top: 60px;
+	left: 18px;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #333;
+	z-index: 1000;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 5px;
+	color: #333;
+	cursor: pointer;
+}
+
+.selected {
+	background-color: #ddd;
+}
+
+.chart-title {
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	font-weight: bold;
+}
+
+.axes-rotate .x-axis text {
+	text-anchor: start;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+
+// .brushed {
+// 	// fill: rgba(0, 0, 0, 0.2) !important;
+// 	fill-opacity: 0.5;
+// }
