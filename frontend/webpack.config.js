@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	devtool: 'source-map',
 	devServer: {
-		port: 80,
-		disableHostCheck: true
+		port: 8081.
+		// disableHostCheck: true
 	},
 	entry: {
 		'index': './src/scripts/index.js',

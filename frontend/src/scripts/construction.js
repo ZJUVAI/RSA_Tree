@@ -233,7 +233,7 @@ function fetchPoints(offset, limit) {
 			$.ajax({
 				method: 'post',
 				type: 'json',
-				url: '//8.209.76.236:3005/construct_test_progressive',
+				url: '//localhost:3005/construct_test_progressive',
 				data: { offset, limit },
 				success: (points) => {
 					console.log('points (progressive):', points);
@@ -366,7 +366,7 @@ var total_pointN = 0, outputCsv = '', missCnt = 0, generated = false;
 
 
 $.ajax({
-	url: '//8.209.76.236:3005/construct_test_sample',
+	url: '//localhost:3005/construct_test_sample',
 	method: 'get',
 	success: (points) => {
 		if (points) {

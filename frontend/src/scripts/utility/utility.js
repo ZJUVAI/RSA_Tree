@@ -170,7 +170,7 @@ export const fetchFuncs = {
 			data: {},
 		}, parameters_);
 
-		let url = `//8.209.76.236:3005/${path}`;
+		let url = `//localhost:3005/${path}`;
 		return $.ajax({
 			method: parameters.method,
 			type: 'json',
@@ -186,7 +186,7 @@ export const fetchFuncs = {
 			data: {},
 		}, parameters_);
 
-		let url = `//8.209.76.236:3005/${path}`;
+		let url = `//localhost:3005/${path}`;
 		return $.ajax({
 			method: parameters.method,
 			type: 'json',
